@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        l=[]
         function f(){
             let aaa = document.getElementById("a").value;
             let bbb = document.getElementById("b").value;
             let ccc = document.getElementById("c").value;
             let ddd = document.getElementById("d").value;
             let str= `${aaa} ${bbb} ${ccc} ${ddd}`;
-            ddddd.innerHTML=str
+            l.push("str")
+            ddddd.innerHTML=l
         }
     </script>
 </head>
