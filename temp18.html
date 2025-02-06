@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            margin: 20px;
+            border: 2px solid gray;
+            padding: 20px;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      let a = 10;
+      console.log(a);
+      let user = {
+        id: 1,
+        name: "johnny boyy",
+        email: "john@gmail.com",
+        password: "1234",
+      };
+      console.log(user.name);
+      let names = ["johnny", "john", "jimmy"];
+      names.push("ckjdi");
+      console.log(names);
+      let products = [
+        {
+          id: 1,
+          name: "prod 1",
+          price: 35,
+          desc: "This is description of the prod1",
+          url: "https://picsum.photos/id/1/200/200",
+        },
+        {
+          id: 2,
+          name: "prod 2",
+          price: 50,
+          desc: "This is description of the prod2",
+          url: "https://picsum.photos/id/2/200/200",
+        },
+        {
+          id: 3,
+          name: "prod 3",
+          price: 45,
+          desc: "This is description of the prod3",
+          url: "https://picsum.photos/id/3/200/200",
+        },
+      ];
+      //console.log(products[0]);
+      let length= products.length
+      let str="<div class='container'>"
+      for (let i=0;i<length;i++){
+        // str+=products[i].name
+        str+= `<div class='box'> 
+            <img src='${products[i].url}'>
+            <h2>${products[i].name}</h3>
+            <p>Desc: ${products[i].desc}</p>
+            <h3>Price: ${products[i].price}</h3>
+            <button> Add to Cart </button>
+            </div>`
+      }
+      str+='</div>'
+      root.innerHTML = str
+    </script>
+  </body>
+</html>

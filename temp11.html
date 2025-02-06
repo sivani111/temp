@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="mysrcipt.js"></script>
+    <!-- <script src="mysrcipt.js"></script> -->
+    <script>
+        function f() {
+            let a=document.getElementById("n").value
+            str=""
+            for (let i=1;i<11;i++){
+                str += `${a}*${i}=${a*i} <br>`
+            }
+            d.innerHTML=str;
+        }
+    </script>
 </head>
 <body>
-    <script>
-        let name= prompt("Enter ur name")
-        document.write(name)
-        document.write("My name is"+name)
-        document.write(My name is $(name))
-    </script>
-
+    <!-- <script>
+        // let name= prompt("Enter ur name")
+        // document.write(name)
+        // document.write("My name is"+name)
+        // document.write(My name is $(name))
+    </script> -->
+    <p><input type="number" id="n" onchange="f()"></p>
+    <!-- <button onclick="f()"> Submit </button> -->
+    <div id="d"></div>
 </body>
 </html>
