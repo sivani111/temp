@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f() {
+            let x = document.getElementById("name").value;
+            let y = document.getElementById("email").value;
+            let z = document.getElementById("pass").value;
+            let s = document.getElementById("dob").value;
+            let str= `${x}, ${y}, ${z}, ${s}`
+            d.innerHTML=str
+        }
+
+    </script>
+</head>
+<body>
+    <h1 class="h2">New User Signup form</h1>
+    <p><input type="text" id="name" placeholder="Enter your name"></p>
+    <p><input type="text" id="email" placeholder="Enter Email or phn number"></p>
+    <p><input type="password"  id="pass" placeholder="Enter password"></p>
+    <p><input type="date" id="dob" placeholder="Enter your dob"></p>
+    <!-- <button onclick="chkusr()" style="background-color: blue;color: aliceblue;">Log in</button> -->
+    <button onclick="f()" style="background-color: blue;color: aliceblue;">Register</button>
+    <p><div id="d"></div></p>
+</body>
+</html>
+
+

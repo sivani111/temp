@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function chkusr(){
+            let usrname=document.getElementById("email").value
+            let pwrd=document.getElementById("pass").value
+            if (usrname =="" || pwrd=="1234"){
+                msg.innerHTML="Cant be blank"}
+            else if (usrname!=="john@gmail.com" || pwrd!=="1234"){
+                msg.innerHTML="Access Denied"}
+            else{
+                msg.innerHTML="Welcome!!!!!!"
+            }
+            let aaa = document.getElementById("email").value;
+            let bbb = document.getElementById("pass").value;
+            let str= `${aaa} ${bbb}`;
+            d.innerHTML=str
+        }
+        
+    </script>
+    <style>
+        .container{
+            padding-top: 100px;
+            text-align:center;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .box{
+            border: 2px solid gray;
+            width: 350px;
+            height: 380px;
+            padding: 17px;
+            border-radius: 10px;
+        }
+        .h2{
+            margin-bottom: 60px;
+        }
+        input{
+
+            padding: 20px;
+            width: 85%;
+            border-radius: 7px;
+        }
+        button{
+            margin-top: 20px;
+            font-size: large;
+            border-radius: 6px;
+            padding:10px;
+            width: 50% ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <p><div id="msg"></div></p>
+        <h2 class="h2">Login in</h2>
+        <p><input type="text" id="email" placeholder="Enter Email or phn number"></p>
+        <p><input type="password"  id="pass" placeholder="Enter password"></p>
+        <button onclick="chkusr()" style="background-color: blue;color: aliceblue;">Log in</button>
+        <!-- <button onclick="f()" style="background-color: blue;color: aliceblue;">Log in</button> -->
+        <p><div id="d"></div></p>
+    </div>
+    </div>    
+</body>
+</html>
