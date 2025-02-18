@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function calc(a,b){
+        const calc = (a,b) => {
+            return a+b;
+        };
+        let res=calc(22,30)
+        console.log(res)
+
+        const greet =() =>{
+            console.log("Hello")
+        };
+        const a = greet ;
+        a();
+
+        const products=["a","b","c"];
+        // for (let i=0; i<products.length; i++){
+        //     console.log(products[i])
+        // }
+        products.forEach((value)=>console.log(value));
+        products.forEach((value,index,arr) => {
+            console.log(index+1,value);
+        });
+
+        const num= [12,23,45,10]
+        const newArr= num.map(value => {
+            return value+5
+        })
+        console.log(newArr);
+
+        const newAr=num.map((value) => value+5);
+        console.log(newAr);
+
+        const newar=num.filter((value) => value>10);
+        console.log(newar);
+
+        const newarr=num.find((value) => value>10);
+        console.log(newarr);
+
+        const p=[
+            { id: 1, name: "p1", price: 25 },
+            { id: 2, name: "p2", price: 40 },
+            { id: 3, name: "p3", price: 35 },
+        ]; 
+        p.map((value)=> {
+            console.log(value.name,value.price);
+        });
+    
+
+    </script>
+</body>
+</html>

@@ -15,7 +15,11 @@
             else{
                 msg.innerHTML="Welcome!!!!!!"
             }
-            let aaa = document.getElementById("email").value;
+            // let aaa = document.getElementById("email").value;
+            // let bbb = document.getElementById("pass").value;
+            //let aaa= document.querySelector(".c").value
+            // let aaa= document.querySelector("input").value;
+            let aaa= document.querySelector("#email").value;
             let bbb = document.getElementById("pass").value;
             let str= `${aaa} ${bbb}`;
             d.innerHTML=str
@@ -53,6 +57,9 @@
             padding:10px;
             width: 50% ;
         }
+        .c{
+            background-color: antiquewhite;
+        }
     </style>
 </head>
 <body>
@@ -60,7 +67,7 @@
         <div class="box">
         <p><div id="msg"></div></p>
         <h2 class="h2">Login in</h2>
-        <p><input type="text" id="email" placeholder="Enter Email or phn number"></p>
+        <p><input type="text" class="c" id="email" placeholder="Enter Email or phn number"></p>
         <p><input type="password"  id="pass" placeholder="Enter password"></p>
         <button onclick="chkusr()" style="background-color: blue;color: aliceblue;">Log in</button>
         <!-- <button onclick="f()" style="background-color: blue;color: aliceblue;">Log in</button> -->
