@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- <script type="module" src="main.js">
+        import add from "./calc.js"
+        root.innerHTML=add(3,4)
+    </script> -->
+    <script>
+        let name= "aaron"
+        function head(){
+            return `<h2>lyhfml ${name}</h2>`
+        }
+        function foot(){
+            return `<h2>warner!</h2>`
+        }
+        root.innerHTML= head()+foot()
+    </script>
+</body>
+</html>
